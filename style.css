@@ -1,0 +1,431 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: #219150;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.heading{
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header.active {
+  background:#fff;
+
+}
+.header-logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #10221b;
+}
+.header-logo i {
+  color: #219150;
+}
+.header-logo span {
+  color: #219150;
+}
+.header-nav a {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #10221b;
+}
+.header-nav a:hover {
+  color: #219150;
+}
+.header-nav a.active {
+  color: #219150;
+}
+.header #close-nav {
+  font-size: 5rem;
+  cursor: pointer;
+  display: none;
+}
+.header-icons {
+  display: flex;
+  gap: 2rem;
+}
+.header-icons #acount-nav {
+  display: none;
+}
+.header-icons div {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.header-icons div:hover {
+  color: #219150;
+}
+.header-icons a {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.header-icons a:hover {
+  color: #219150;
+}
+
+.search-form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #443f3fcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transform: translateY(-110%);
+}
+.search-form.active {
+  transform: translateY(0%);
+  
+}
+.search-form #close-search {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 5rem;
+  cursor: pointer;
+  color: #fff;
+}
+.search-form #close-search:hover {
+  color: #219150;
+}
+.search-form form {
+  width: 50rem;
+  height: 40rem;
+  background:  #219150;
+  border-radius: .5rem;
+  box-shadow: .5rem .5rem #fff;
+  padding-top: 7rem;
+  margin: 4rem 9rem;
+  padding-bottom: 2rem; 
+  border-bottom: 0.2rem solid white;
+  
+  align-items: center;
+}
+.quebra{
+  display: flex;
+}
+
+.n-quebra{
+  display: block;
+}
+.search-form form input {
+  width: 35rem;
+  border-radius: .3rem;
+  padding: 1rem;
+  margin: 1rem 0 0 7rem;
+  
+  color: #fff;
+
+}
+.search-form form input::placeholder {
+  color: #aaa;
+}
+.search-form form label {
+ 
+  padding-left: 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+.search-form form label:hover {
+  color: #10221b;
+}
+
+#home {
+  padding: 0;
+}
+#home .box {
+  min-height: 100vh !important;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+  padding: 2rem 9% !important;
+}
+#home .box .contain {
+  width: 33rem;
+}
+#home .box .contain span {
+  font-size: 3rem;
+  color: #10221b;
+}
+#home .box .contain h3 {
+  font-size: 6rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+#home .box .contain p {
+  line-height: 2;
+  font-size: 1.5rem;
+    color: #219150;
+
+  padding: 1rem 0;
+}
+#home .box .contain a {
+  padding: 1rem 3rem;
+  display: inline-block;
+  color: #10221b;
+  border: 0.2rem solid #10221b;
+  font-size: 1.7rem;
+}
+#home .box .contain a:hover {
+  background: #10221b;
+  color: #fff;
+}
+#home .second {
+  justify-content: flex-start;
+}
+
+
+#sobre .sobre-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1rem;
+}
+.box{
+  text-align: center;
+  padding: 2rem;
+ 
+
+}
+
+.box img{
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.equipe .card-container{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+
+}
+
+.equipe .card-container .card{
+  
+  padding: 2rem;
+  margin: 1rem auto;
+  
+
+}
+
+.equipe .card-container .card img{
+
+  width: 25rem;
+  height: 25rem;
+  box-shadow:8px 8px #219150;
+}
+
+.equipe .card-container .card .info{
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.equipe .card-container .card .info h2{
+
+  font-size: 2rem;
+  margin-top: 1rem;
+
+}
+
+
+.equipe .card-container .card-box .info p{
+
+  font-size: 1rem;
+  margin-top: 1rem;
+
+}  
+
+
+.footer{
+  background-image: url(./img/footer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+ 
+}
+
+.footer .card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+   
+
+}
+
+.footer .card{
+  margin: 0 auto;
+
+}
+
+
+.footer .card h3{
+  color: #fff;
+  padding-top: 3rem;
+  text-align: center;
+
+ 
+
+}
+
+
+.footer .card a {
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .card a i {
+  color: #219150;
+
+  
+
+}
+
+.footer .card a i:hover {
+  color: #fff;
+
+}
+
+
+
+
+
+
+
+
+  
+
+
+@media (max-width: 1200px) {
+  html .hader {
+    padding: 2rem 5%;
+  }
+  html section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  html .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header #acount-nav {
+    display: inline-block;
+  }
+  .header-nav {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    width: 30rem;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+  .header-nav.active {
+    left: 0;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.8);
+  }
+  .header-nav a {
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .header-nav #close-nav {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    color: black;
+  
+  }  
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+
+  /* .header-icons, #shopping{
+    padding: 0 1rem;
+
+  }
+  .header-icons #shopping, #acount-nav, #search{
+    font-size: 2.3rem;
+
+  } */
+
+
+
+
+
+
